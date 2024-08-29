@@ -372,8 +372,16 @@ div.camp4, div.txtan {
 
 /*CSS para a página da surpresa*/
 
+div.hap > img {
+    width: 60vw;
+}
+
 div.hap {
-    margin-top: 20px;
+    background: #34333475;
+    text-align: center;
+    border-radius: 0px 0px 10px 10px;
+    border-bottom: 2px solid #ffff99;
+    box-shadow: 0px 1px 8px 2px #00000040;
     margin-bottom: 30px;
 }
 
@@ -385,16 +393,43 @@ div.txtan {
 @keyframes slideIn {
     from {
         opacity: 0;
-        transform: translateX(-50px);
+        transform: translateY(-50px);
     }
     to {
         opacity: 1;
-        transform: translateX(0);
+        transform: translateY(0);
     }
 }
 
 div.hap {
-    animation: slideIn 1.7s
+    animation: slideIn 1.9s
     ease-in-out;
 }
 
+.name-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    font-size: 3em;
+    color: #762945; /* Usando a cor que você já definiu */
+    font-weight: bold;
+}
+
+.letter {
+    opacity: 0;
+    transform: translateY(-50px);
+    animation: appear 0.5s ease forwards;
+}
+
+.letter:nth-child(1) { animation-delay: 0s; }
+.letter:nth-child(2) { animation-delay: 0.2s; }
+.letter:nth-child(3) { animation-delay: 0.4s; }
+.letter:nth-child(4) { animation-delay: 0.6s; }
+.letter:nth-child(5) { animation-delay: 0.8s; }
+
+@keyframes appear {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
