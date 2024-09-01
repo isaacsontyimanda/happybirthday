@@ -159,6 +159,10 @@ div.camp4 > h2:hover {
     input#tname::placeholder {
         font-size: 2.6vw;
     }
+
+    body {
+        transition: width .9s;
+    }
 }
 
 /*Dispositivos Médios (Tabletes)*/
