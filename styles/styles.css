@@ -89,7 +89,7 @@ input#tname {
     background: var(--cor2);
     color: var(--cor1);
     text-align: center;
-    font-size: .7em;
+    font-size: 2.3vw;
     border: 2px solid var(--cor1);
     border-radius: 20px;
     padding: 10px;
