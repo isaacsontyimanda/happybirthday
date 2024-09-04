@@ -387,6 +387,21 @@ body.surprise, html.surprise {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+body.surprise, html.surprise {
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+}
+
+body.surprise, html.surprise {
+    animation: fadeIn .8s ease-in-out forwards;
+}
+
 #particles-js {
     position: absolute;
     width: 100%;
@@ -429,7 +444,7 @@ a.fs {
 
 footer.surprisef {
     position: absolute;
-    bottom: 0px;
+    bottom: -4px;
     width: 100%;
     background: var(--cor1);
     text-align: center;
