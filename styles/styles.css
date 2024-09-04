@@ -376,3 +376,64 @@ div.camp4, div.txtan {
 
 /*CSS para a página da surpresa*/
 
+body.surprise, html.surprise {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor2); /* Cor de fundo */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.message-container {
+    text-align: center;
+    color: var(--cor1);
+}
+
+#name {
+    font-size: 4em;
+    animation: fadeIn 3s ease-in-out;
+}
+
+#message {
+    font-size: 1.1em;
+    text-align: justify;
+    margin-top: 20px;
+    margin: 10px 10px;
+    animation: slideIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+a.fs {
+    text-decoration: none;
+    color: var(--cor2);
+}
+
+footer.surprisef {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    background: var(--cor1);
+    text-align: center;
+    font-size: 0.9em;
+    color: var(--cor2);
+    padding: 10px;   
+}
