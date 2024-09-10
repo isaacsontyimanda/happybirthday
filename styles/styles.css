@@ -513,43 +513,45 @@ footer.spf {
     }
     to {
         opacity: 1;
-        transform: translateX(100px);
+        transform: translateX(22px);
     }
 }
 .s2 {
     animation: slideIn2 2s ease-in-out 1 forwards;
 }
 
-@keyframes slideIn3 {
+@keyframes fadeIn3 {
     from {
         opacity: 0;
-        transform: translateX(0);
     }
     to {
         opacity: 1;
-        transform: translateX(-100px);
     }
 }
 .s3 {
-    animation: slideIn3 1.5s ease-in-out 1 forwards;
+    animation: fadeIn3 2s ease-in-out 1 ;
 }
 
 @keyframes fadeAndmove {
     0% {
-        opacity: 0;
-        transform: translateX(0);
-    }
-    50% {
-        opacity: 1;
-        transform: translateX(50px);
-    }
-    100% {
         opacity: 1;
         transform: translateX(100px);
     }
+    50% {
+        opacity: 1;
+        transform: translateX(-10px);
+    }
+    80% {
+        opacity: 1;
+        transform: translateX(230px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 .bot {
-    animation: fadeAndmove 3s ease-in-out 1 forwards;
+    animation: fadeAndmove 5s ease-in-out 1 forwards;
 }
 
 .video {
