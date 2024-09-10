@@ -340,8 +340,7 @@ div.camp4 > p {
 }
 
 div.camp1 {
-    animation: slideIn 1.5s
-    ease-in-out;
+    animation: slideIn 1.5s ease-in-out forwards;
 }
 
 @keyframes fadeIn {
@@ -354,8 +353,7 @@ div.camp1 {
 }
 
 div.camp2, body.load {
-    animation: fadeIn 2s
-    ease-in-out;
+    animation: fadeIn 2s ease-in-out forwards;
 }
 
 @keyframes slideIn2 {
@@ -370,8 +368,7 @@ div.camp2, body.load {
 }
 
 div.camp4, div.txtan {
-    animation: slideIn2 1.5s
-    ease-in-out;
+    animation: slideIn2 1.5s ease-in-out forwards;
 }
 
 /*CSS para a página da surpresa*/
@@ -426,7 +423,7 @@ section.s1 {
 }
 
 section.s2 {
-    margin-left: 0px;
+    margin-left: 15vw;
     margin-top: 20px;
 }
 
@@ -453,6 +450,10 @@ p.pf > a {
 
 .b1 {
     margin-top: 20px;
+}
+
+section.s3 {
+    margin-right: 15vw;
 }
 
 input.bot {
