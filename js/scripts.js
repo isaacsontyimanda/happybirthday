@@ -33,5 +33,3 @@ function redirectToSurprise(nome) {
         window.location.href = `surprise.html?name=${encodeURIComponent(nome)}`;
     }
 }
-
-//Script para o ParticleJS
