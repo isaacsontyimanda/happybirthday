@@ -584,4 +584,9 @@ footer.spf {
   
   div.nav {
     animation: upAndDown 3s ease-in-out infinite;
-  }  
+  }
+
+  .download {
+    text-decoration: none;
+    color: var(--cor1);
+  }
