@@ -573,8 +573,15 @@ footer.spf {
     margin-top: 20px;
 }
 
-@media screen and (min-width: 600px) {
-    body.surpresa {
-        display: none;
+@keyframes upAndDown {
+    0%, 100% {
+      transform: translateY(0);
     }
-}
+    50% {
+      transform: translateY(-5px);
+    }
+  }
+  
+  div.nav {
+    animation: upAndDown 3s ease-in-out infinite;
+  }  
