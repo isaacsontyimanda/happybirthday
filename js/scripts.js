@@ -33,3 +33,20 @@ function redirectToSurprise(nome) {
         window.location.href = `surprise.html?name=${encodeURIComponent(nome)}`;
     }
 }
+
+//Lógica para surpresa especial
+
+function especial() {
+    var div = document.getElementById("esp");
+    var section = document.querySelector(".s8");
+    var video = document.querySelector(".video");  // Seleciona o vídeo
+
+    if (section.style.display === "none" || section.style.display === "") {
+        section.style.display = "block";  // Exibe a seção que contém o vídeo
+    }
+    if (div.style.display === "none" || div.style.display === "") {
+        div.style.display = "block";  // Exibe o vídeo
+    }
+    
+    video.play();  // Inicia o vídeo automaticamente
+}

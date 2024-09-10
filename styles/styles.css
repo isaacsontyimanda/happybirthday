@@ -551,3 +551,27 @@ footer.spf {
 .bot {
     animation: fadeAndmove 3s ease-in-out 1 forwards;
 }
+
+.video {
+    width: 85vw;
+    border-radius: 10px;
+    border: 2px solid var(--cor1);
+}
+
+.s8 {
+    display: none;
+    width: 90vw;
+    background: var(--cor2);
+    color: var(--cor1);
+    border-radius: 10px;
+    box-shadow: 0px 1px 8px 2px #00000040;
+    padding: 10px;
+    margin-left: auto;
+    margin-top: 20px;
+}
+
+@media screen and (min-width: 600px) {
+    body.surpresa {
+        display: none;
+    }
+}
