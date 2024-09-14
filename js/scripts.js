@@ -2,7 +2,7 @@ function desb() {
     let nome = document.querySelector('input#tname').value.trim();
 
     // Nome completo esperado
-    const nomeCompleto = 'Dulce Sumluisse Martelo';
+    const nomeCompleto = 'Nome Completo';
 
     // Verifica se o campo está vazio
     if (nome === '') {
