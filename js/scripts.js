@@ -108,3 +108,39 @@ friends.forEach(friend => {
         });
     });
 });
+
+// Selecione os elementos necessários
+const slideContainer = document.querySelector('.photo-slide');
+const images = document.querySelectorAll('.photo-slide img');
+const prevButton = document.createElement('button');
+const nextButton = document.createElement('button');
+
+// Adicione os botões de navegação
+prevButton.textContent = '❮';
+prevButton.classList.add('gallery-control', 'prev');
+nextButton.textContent = '❯';
+nextButton.classList.add('gallery-control', 'next');
+document.querySelector('.photo-gallery').append(prevButton, nextButton);
+
+// Variáveis de controle
+let currentIndex = 0;
+
+// Função para atualizar a posição da galeria
+function updateGalleryPosition() {
+  const offset = -currentIndex * 100;
+  slideContainer.style.transform = `translateX(${offset}%)`;
+}
+
+// Navegar para a imagem anterior
+prevButton.addEventListener('click', () => {
+  currentIndex = (currentIndex - 1 + images.length) % images.length;
+  updateGalleryPosition();
+});
+
+// Navegar para a próxima imagem
+nextButton.addEventListener('click', () => {
+  currentIndex = (currentIndex + 1) % images.length;
+  updateGalleryPosition();
+});
+
+//Lógica para tela cheia
