@@ -27,7 +27,7 @@ body.surpresa {
 }
 
 body {
-    background: #f2f2f2 url('../img/pattern/pattern-bg.svg') no-repeat center;
+    background: #f2f2f2 url('../img/svg/pattern-bg.svg') no-repeat center;
     background-size: cover;
     background-attachment: fixed;
 }
@@ -222,13 +222,6 @@ div.campft1 {
 
 img.ft1 {
     width: 50%;
-    border-radius: 10px;
-    box-shadow: 0px 1px 8px 2px var(--cor3);
-    margin: 10px;
-}
-
-img.ft2 {
-    width: 90%;
     border-radius: 10px;
     box-shadow: 0px 1px 8px 2px var(--cor3);
     margin: 10px;

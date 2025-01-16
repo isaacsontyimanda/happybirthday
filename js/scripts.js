@@ -71,22 +71,40 @@ menuBtn.addEventListener("click", () => {
 });
 
 // Lógica para reprodução dos áudios
-document.querySelectorAll('.friend').forEach(friend => {
+const friends = document.querySelectorAll('.friend');
+
+// Função para pausar todos os áudios
+function pauseAllAudios() {
+    const allAudios = document.querySelectorAll('audio');
+    allAudios.forEach(audio => {
+        audio.pause();
+        audio.currentTime = 0; // Reinicia o áudio
+    });
+
+    // Remove animações de todas as imagens
+    const allImages = document.querySelectorAll('.friend img');
+    allImages.forEach(img => img.classList.remove('float'));
+}
+
+// Adiciona o evento de clique para cada amigo
+friends.forEach(friend => {
     friend.addEventListener('click', () => {
-        // Identifique o áudio e a imagem
+        // Pausa todos os outros áudios
+        pauseAllAudios();
+
+        // Identifica o áudio e a imagem
         const audio = friend.querySelector('audio');
         const img = friend.querySelector('img');
 
-        // Reproduza o áudio
+        // Reproduz o áudio selecionado
         audio.play();
 
-        // Adicione a classe de animação
+        // Adiciona a classe de animação
         img.classList.add('float');
 
-        // Remova a animação após o áudio terminar
+        // Remove a animação após o áudio terminar
         audio.addEventListener('ended', () => {
             img.classList.remove('float');
         });
     });
 });
-
