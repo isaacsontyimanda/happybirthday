@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Camada_2" data-name="Camada 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke-linecap: round;
+      }
+
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke: #ed1c24;
+        stroke-miterlimit: 10;
+        stroke-width: 6px;
+      }
+    </style>
+  </defs>
+  <g id="surprise">
+    <g>
+      <rect class="cls-2" x="3" y="3" width="90" height="90" rx="13.15" ry="13.15"/>
+      <line class="cls-1" x1="16.48" y1="26.66" x2="80.47" y2="26.66"/>
+      <line class="cls-1" x1="29.78" y1="48" x2="80.47" y2="48"/>
+      <line class="cls-1" x1="55.13" y1="69.34" x2="80.47" y2="69.34"/>
+    </g>
+  </g>
+</svg>

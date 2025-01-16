@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Camada_2" data-name="Camada 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke: #ed1c24;
+        stroke-width: 6px;
+      }
+
+      .cls-2 {
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+    </style>
+  </defs>
+  <g id="galeria">
+    <rect class="cls-1" x="3" y="3" width="90" height="90" rx="13.15" ry="13.15"/>
+    <polyline class="cls-2" points="19.41 30.57 75.02 30.57 75.02 65.43 47.22 65.43"/>
+  </g>
+</svg>

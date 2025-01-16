@@ -1,0 +1,365 @@
+@charset "UTF-8";
+
+:root {
+    --cor1: #ED1C24;
+    --cor2: #FFFFFF;
+    --cor3: #ed1c237c;
+}
+
+* {
+    padding: 0px;
+    margin: 0px; 
+    box-sizing: border-box;
+    font-family: SF UI Display, sans-serif;
+}
+
+/*Animaçãozinha pro body*/
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+body.surpresa {
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+body {
+    background: #f2f2f2 url('../img/pattern/pattern-bg.svg') no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/*Menu*/
+menu.menu {
+    background: var(--cor2);
+    color: var(--cor1);
+    border-bottom: 3px solid var(--cor1);
+    border-radius: 0px 0px 100px 0px;
+    box-shadow: 0px 1px 8px 2px var(--cor3);
+    padding: 10px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+    }
+
+    .navbar ul li {
+        margin: 10px 0;
+    }
+}
+
+/* Logo */
+div.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+img.logo {
+    width: 100px;
+}
+
+/* Estilo para o título de aniversário */
+div.aniv {
+    border: 4px solid var(--cor1);
+    border-radius: 15px;
+    text-align: center;
+    color: var(--cor1);
+    font-weight: bold;
+    font-size: 1.2em;
+    width: fit-content;
+    background: var(--cor2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    padding: 10px 15px;
+    margin: 20px auto;
+}
+
+/* Ajuste para quando o menu desaparece na versão mobile */
+@media (max-width: 768px) {
+    .menu {
+        margin-bottom: 20px; /* Adiciona espaçamento inferior ao menu */
+    }}
+
+/* Navbar container */
+.navbar {
+    display: none;
+    background: var(--cor2);
+    border-bottom: 3px solid var(--cor1);
+    border-radius: 0px 0px 100px 0px;
+    box-shadow: 0px 1px 8px 2px var(--cor3);
+    padding: 10px 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 228px;
+    transform: translateY(-20px); /* Inicialmente fora da tela */
+    opacity: 0;
+    transition: all 0.3s ease-in-out; /* Transição suave */
+    z-index: 1000;
+}
+
+/*Alternar `entre menu hambúrguer e menu voltar*/
+
+
+/* Navbar items */
+.navbar ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar items */
+.navbar ul li {
+    margin: 10px 0;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: var(--cor1);
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.navbar ul li a:hover {
+    background: var(--cor1);
+    color: var(--cor2);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Active link (optional) */
+.navbar ul li a.active {
+    background: var(--cor1);
+    color: var(--cor2);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    /* Exibe o menu quando a classe active for adicionada */
+    .navbar.active {
+        display: block;
+        transform: translateY(0); /* Move para sua posição final */
+        opacity: 1;
+    }}
+
+    /* Ajustando o botão de hambúrguer */
+    .btn-h {
+        display: block;
+        cursor: pointer;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 1100; /* Garante que o botão fique acima do menu */
+    }
+
+    /* Ajustando o botão de voltar */
+    /* Inicialmente, o botão de voltar está escondido */
+img.btn-b {
+    display: none;
+}
+
+/* Quando o menu está aberto, o botão de voltar aparece */
+.navbar.active + img.btn-b {
+    display: block;
+}
+
+/* Botão hambúrguer */
+img.btn-h {
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    z-index: 1100; /* Garante que o botão fique acima do menu */
+}
+
+/* Botão voltar (btn-b) */
+img.btn-b {
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    top: 10px;
+    right: 70px; /* Ajusta a posição para evitar sobreposição com o btn-h */
+    cursor: pointer;
+    z-index: 1050; /* Garante que o botão fique abaixo do menu */
+}
+
+/* Ocultar botões de hambúrguer e voltar em telas maiores */
+@media (min-width: 769px) {
+    img.btn-h,
+    img.btn-b {
+        display: none;
+    }
+}
+
+/*Ajuste para a foto principal */
+div.campft1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 90%;
+    background: var(--cor2);
+    border-radius: 20px;
+    box-shadow: 0px 1px 8px 2px var(--cor3);
+    padding: 10px;
+    margin: 20px auto;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+img.ft1 {
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: 0px 1px 8px 2px var(--cor3);
+    margin: 10px;
+}
+
+img.ft2 {
+    width: 90%;
+    border-radius: 10px;
+    box-shadow: 0px 1px 8px 2px var(--cor3);
+    margin: 10px;
+}
+
+figcaption {
+    background: var(--cor2);
+    color: var(--cor1);
+    border-radius: 10px;
+    font-size: 1em;
+    text-align: justify;
+    padding: 10px;
+    box-shadow: 0px 1px 8px 2px var(--cor3);
+}
+
+/*Ajustes da Galeria */
+img.galery {
+    width: 90%;
+    border-radius: 20px;
+    box-shadow: 0px 1px 8px 2px #ED1C24;
+
+}
+
+/*Estilos para a página Galeria*/
+
+/*Ajustes para os botões da galeria*/
+div.btn-g {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img.btn-gs {
+    width: 60px;
+    cursor: pointer;
+    margin: 10px;
+    margin-bottom: 80px;
+}
+
+img.btn-full {
+    width: 100px;
+}
+
+img.btn-vol {
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    z-index: 1100; /* Garante que o botão fique acima do menu */
+}
+
+/*Estilos para a página Friends*/
+div.friend-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    cursor: pointer;
+}
+
+abbr {
+    text-decoration: none;
+}
+
+div.friend > abbr > img {
+    width: 110px;
+    background: var(--cor1);
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px 0px var(--cor1);
+    margin-bottom: 60px;
+}
+
+/* Animação flutuante separada */
+img.float {
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/*Animação para o logo*/
+.sms {
+    animation: float 3s ease-in-out 1s 3;
+}
+ div.aniv {
+    animation: float 3s ease-in-out 11s 3;
+}
+img.logo {
+    animation: float 3s ease-in-out 2.5s 3;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Footer */
+footer.foot {
+    width: 100%;
+    background: var(--cor2);
+    color: var(--cor1);
+    text-align: center;
+    font-size: 0.7em;
+    font-weight: 300;
+    border-top: 2px solid var(--cor1);
+    box-shadow: 0px 1px 8px 2px var(--cor3);
+    padding: 10px;
+    bottom: 0;
+    left: 0;
+    margin-top: auto;
+    position: fixed;
+}
+
+footer p a {
+    text-decoration: none;
+    color: var(--cor1);
+}

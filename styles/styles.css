@@ -1,8 +1,9 @@
 @charset "UTF-8";
 
 :root {
-    --cor1: #762945;
-    --cor2: #ECD1DC;
+    --cor1: #ED1C24;
+    --cor2: #FFFFFF;
+    --cor3: #ed1c237c;
 }
 
 * {
@@ -16,7 +17,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background: #0000001e;
+    background: #F2F2F2;
 }
 
 .contain {
@@ -28,15 +29,15 @@ footer > div.camp3 {
     color: var(--cor1);
     text-align: center;
     font-weight: 300;
-    border-top: 3px solid var(--cor1);
-    box-shadow: 0px 1px 8px 2px #00000040;
+    border-top: 2px solid var(--cor1);
+    box-shadow: 0px 1px 8px 2px #ED1C24;
     padding: 10px;
     margin-top: auto;
     width: 100%;
 }
 
 footer p {
-    font-size: 0.9em;
+    font-size: 0.7em;
     margin: 0;
 }
 
@@ -45,6 +46,36 @@ footer p a {
     color: var(--cor1);
 }
 
+img.logo {
+    width: 100px;
+}
+
+abbr {
+    text-decoration: none;
+}
+
+div.links > abbr > a {
+    text-decoration: none;
+    font-size: 1.2em;
+    color: var(--cor1);
+    margin: 4px;
+}
+
+div.camp0 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--cor2);
+    color: var(--cor1);
+    font-weight: 300;
+    border-bottom: 2px solid var(--cor1);
+    box-shadow: 0px 1px 8px 2px #ED1C24;
+    padding: 4px;
+    width: 100%;
+}
+
+
+
 div.camp1 {
     width: 240px;
     background: var(--cor2);
@@ -52,7 +83,7 @@ div.camp1 {
     text-align: center;
     border: 2px solid var(--cor1);
     border-radius: 20px;
-    box-shadow: 0px 1px 8px 2px #00000040;
+    box-shadow: 0px 1px 8px 2px var(--cor3);
     cursor: pointer;
     padding: 10px;
     margin-top: 20px;
@@ -67,11 +98,6 @@ div.camp1 > p {
     font-weight: 300;
 }
 
-div.camp1 > h2:hover {
-    color: #9b365b;
-    text-shadow: 0px 1px 8px #00000040;
-}
-
 div.camp2 {
     width: 94vw;
     background: var(--cor2);
@@ -79,7 +105,7 @@ div.camp2 {
     text-align: center;
     border: 2px solid var(--cor1);
     border-radius: 20px;
-    box-shadow: 0px 1px 8px 2px #00000040;
+    box-shadow: 0px 1px 8px 2px var(--cor3);
     padding: 10px;
     margin: auto;
     }
@@ -123,8 +149,8 @@ input#btn {
 }
 
 input#btn:hover {
-    background: #702642;
-    color: #bea9b2;
+    background: #a31217;
+    color: #c2c2c2;
 }
 
 div.camp4 {
@@ -134,7 +160,7 @@ div.camp4 {
     text-align: center;
     border: 2px solid var(--cor1);
     border-radius: 20px;
-    box-shadow: 0px 1px 8px 2px #00000040;
+    box-shadow: 0px 1px 8px 2px var(--cor3);
     cursor: pointer;
     padding: 10px;
     margin-left: 30vw;
@@ -149,11 +175,6 @@ div.camp4 > p {
     font-weight: 300;
 }
 
-div.camp4 > h2:hover {
-    color: #9b365b;
-    text-shadow: 0px 1px 8px #00000040;
-}
-
 /*Dispositivos Muito Pequeno (Iphone SE, Samsung J5 Pro)*/
 @media screen and (max-width: 375px) {
     input#tname::placeholder {
@@ -163,6 +184,8 @@ div.camp4 > h2:hover {
     body {
         transition: width .9s;
     }
+
+
 }
 
 /*Dispositivos Médios (Tabletes)*/
@@ -328,173 +351,28 @@ div.camp4 > p {
     }
 }
 
-@keyframes slideIn {
-    from {
-        opacity: 0;
-        transform: translateY(-50px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-div.camp1 {
-    animation: slideIn 1.5s ease-in-out forwards;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-div.camp2, body.load {
-    animation: fadeIn 2s ease-in-out forwards;
-}
-
-@keyframes slideIn2 {
-    from {
-        opacity: 0;
-        transform: translateY(60px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-div.camp4, div.txtan {
-    animation: slideIn2 1.5s ease-in-out forwards;
-}
-
-/*CSS para a página da surpresa*/
-
-@keyframes fadeInb {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-body.surpresa {
-    animation: fadeInb .6s ease-in-out 1;
-}
-
-menu.logo {
-    display: flex;
-    background: linear-gradient(to right, #b6255d, #eecad8);
-    box-shadow: 0px 1px 8px 2px #00000040;
-    padding: 10px;
-}
-
-.dulce {
-    font-weight: normal;
-    text-decoration: none;
-    color: var(--cor1);
-}
-
-div.nav {
-    width: 47vw;
-    background: var(--cor2);
-    text-align: center;
-    border-radius: 5px 15px;
-    box-shadow: 0px 1px 8px 2px #00000040;
-    padding: 10px;
-}
-
-main.conteudo {
-    margin: 10px;
-}
-
-section.s1 {
-    width: 250px;
-    background: var(--cor2);
-    color: var(--cor1);
-    border-radius: 10px;
-    box-shadow: 0px 1px 8px 2px #00000040;
-    padding: 10px;
-    margin-left: auto;
-    margin-top: 20px;
-}
-
-section.s2 {
-    margin-left: 15vw;
-    margin-top: 20px;
-}
-
-img {
-    width: 100%;
-    border-radius: 10px;
-    box-shadow: 0px 1px 8px 2px #00000040;
-}
-
-.img-d {
-    text-align: right;
-    margin: 5px;
-}
-
-section.s5 {
-    width: 90%;
-    margin-right: auto;
-}
-
-p.pf > a {
-    color: var(--cor2);
-    font-weight: 200;
-}
-
-.b1 {
-    margin-top: 20px;
-}
-
-section.s3 {
-    margin-right: 15vw;
-}
-
-input.bot {
-    width: 155px;
-    background: var(--cor2);
-    color: var(--cor1);
-    text-align: center;
-    font-weight: 300;
-    border-radius: 10px;
-    border: 0px;
-    box-shadow: 0px 1px 8px 2px #00000040;
-    cursor: pointer;
-    padding: 10px;
-}
-
-footer.spf {
+/*Ajuste para a página sobre*/
+.sobrew {
+    width: 100px;
     background: var(--cor1);
     color: var(--cor2);
     text-align: center;
-    text-decoration: 0px 1px 1px #0B0B0B;
-    font-weight: 200;
+    border: 2px solid var(--cor2);
+    border-radius: 10px;
+    box-shadow: 0px 1px 8px 2px var(--cor3);
     padding: 10px;
-    margin-top: auto;
+    margin: auto;
 }
 
-/*Animações para os textos*/
-
-@keyframes slideIn {
-    from {
-        opacity: 0;
-        transform: translateY(0);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(5px);
-    }
-}
-.s0 {
-    animation: slideIn 2s ease-in-out 1 forwards;
+p.abw {
+    color: #000000;
+    text-align: justify;
+    padding: 5px;
 }
 
+/*Abaixo estarão os códigos das animações*/
+
+/*Body animation*/
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -503,90 +381,27 @@ footer.spf {
         opacity: 1;
     }
 }
-.s5 {
-    animation: fadeIn 2s ease-in-out 1;
+body.load {
+    animation: fadeIn 1.8s ease-in-out forwards;
+}
+/*Body animation end*/
+
+/*div.camp1 animation*/
+div.camp1 {
+    animation: float 2.6s ease-in-out 2.5s 3;
+}
+div.camp4 {
+    animation: float 2.6s ease-in-out 10s infinite;
 }
 
-@keyframes slideIn2 {
-    from {
-        opacity: 0;
-        transform: translateX(0);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(22px);
-    }
-}
-.s2 {
-    animation: slideIn2 2s ease-in-out 1 forwards;
-}
-
-@keyframes fadeIn3 {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-.s3 {
-    animation: fadeIn3 2s ease-in-out 1 ;
-}
-
-@keyframes fadeAndmove {
+@keyframes float {
     0% {
-        opacity: 1;
-        transform: translateX(100px);
+        transform: translateY(0);
     }
     50% {
-        opacity: 1;
-        transform: translateX(-10px);
-    }
-    80% {
-        opacity: 1;
-        transform: translateX(230px);
+        transform: translateY(-10px);
     }
     100% {
-        opacity: 1;
-        transform: translateX(20px);
+        transform: translateY(0);
     }
 }
-.bot {
-    animation: fadeAndmove 5s ease-in-out 1 forwards;
-}
-
-.video {
-    width: 85vw;
-    border-radius: 10px;
-    border: 2px solid var(--cor1);
-}
-
-.s8 {
-    display: none;
-    width: 90vw;
-    background: var(--cor2);
-    color: var(--cor1);
-    border-radius: 10px;
-    box-shadow: 0px 1px 8px 2px #00000040;
-    padding: 10px;
-    margin-left: auto;
-    margin-top: 20px;
-}
-
-@keyframes upAndDown {
-    0%, 100% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(-5px);
-    }
-  }
-  
-  div.nav {
-    animation: upAndDown 3s ease-in-out infinite;
-  }
-
-  .download {
-    text-decoration: none;
-    color: var(--cor1);
-  }

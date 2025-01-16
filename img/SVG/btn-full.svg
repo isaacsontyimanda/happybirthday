@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Camada_2" data-name="Camada 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 161.49 58.44">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: 0em;
+      }
+
+      .cls-2 {
+        letter-spacing: 0em;
+      }
+
+      .cls-3 {
+        letter-spacing: -.05em;
+      }
+
+      .cls-4 {
+        fill: #fff;
+        stroke: #ed1c24;
+        stroke-miterlimit: 10;
+        stroke-width: 6px;
+      }
+
+      .cls-5 {
+        fill: #ed1c24;
+        font-family: Montserrat-Bold, Montserrat;
+        font-size: 18px;
+        font-weight: 700;
+      }
+    </style>
+  </defs>
+  <g id="galeria">
+    <g>
+      <rect class="cls-4" x="3" y="3" width="155.49" height="52.44" rx="15.41" ry="15.41"/>
+      <text class="cls-5" transform="translate(33.41 33.27)"><tspan class="cls-3" x="0" y="0">T</tspan><tspan x="10.13" y="0">ela </tspan><tspan class="cls-1" x="43.11" y="0">c</tspan><tspan class="cls-2" x="53.68" y="0">h</tspan><tspan x="66.22" y="0">eia</tspan></text>
+    </g>
+  </g>
+</svg>
