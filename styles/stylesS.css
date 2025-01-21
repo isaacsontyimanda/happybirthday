@@ -2,8 +2,8 @@
 
 :root {
     --cor1: #FFC90E;
-    --cor2: #000000;
-    --cor3: #FFC90E;
+    --cor2: #FFFFFF;
+    --cor3: #ffcb0eab;
 }
 
 * {
@@ -242,10 +242,6 @@ img.galery {
     width: 90%;
     border-radius: 20px;
     box-shadow: 0px 1px 8px 2px #ED1C24;
-}
-
-p.abs {
-    color: var(--cor1);
 }
 
 /*Estilos para a página Galeria*/

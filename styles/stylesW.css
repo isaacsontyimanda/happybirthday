@@ -1,9 +1,9 @@
 @charset "UTF-8";
 
 :root {
-    --cor1: #FFFFFF;
-    --cor2: #1F1C3F;
-    --cor3: #1F1C3F;
+    --cor1: #FFC90E;
+    --cor2: #FFFFFF;
+    --cor3: #ffcb0eab;
 }
 
 * {
@@ -61,6 +61,10 @@ div.links > abbr > a {
     margin: 4px;
 }
 
+div.links > abbr > a:hover {
+    border-bottom: 2px solid var(--cor1);
+}
+
 div.camp0 {
     display: flex;
     align-items: center;
@@ -69,7 +73,7 @@ div.camp0 {
     color: var(--cor1);
     font-weight: 300;
     border-bottom: 2px solid var(--cor1);
-    box-shadow: 0px 1px 8px 2px #1F1C3F;
+    box-shadow: 0px 1px 8px 2px var(--cor3);
     padding: 4px;
     width: 100%;
 }
@@ -137,7 +141,7 @@ input#tname::placeholder {
 
 input#btn {
     width: 27vw;
-    background: #F2F2F2;
+    background: var(--cor3);
     color: var(--cor2);
     text-align: center;
     font-weight: 200;
