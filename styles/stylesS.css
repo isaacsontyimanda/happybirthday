@@ -1,9 +1,9 @@
 @charset "UTF-8";
 
 :root {
-    --cor1: #ED1C24;
-    --cor2: #FFFFFF;
-    --cor3: #ed1c237c;
+    --cor1: #FFFFFF;
+    --cor2: #1F1C3F;
+    --cor3: #f2f2f241;
 }
 
 * {
@@ -75,7 +75,7 @@ div.aniv {
     font-size: 1.2em;
     width: fit-content;
     background: var(--cor2);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 10px #00000026;
     padding: 10px 15px;
     margin: 20px auto;
 }
@@ -242,7 +242,10 @@ img.galery {
     width: 90%;
     border-radius: 20px;
     box-shadow: 0px 1px 8px 2px #ED1C24;
+}
 
+p.abs {
+    color: var(--cor1);
 }
 
 /*Estilos para a página Galeria*/
