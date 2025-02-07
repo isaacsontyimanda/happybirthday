@@ -1,0 +1,413 @@
+@charset "UTF-8";
+
+:root {
+    --cor1: #FFC90E;
+    --cor2: #FFFFFF;
+    --cor3: #ffcb0eab;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: SF UI Display, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: #F2F2F2;
+}
+
+.contain {
+    flex: 1;
+}
+
+footer > div.camp3 {
+    background: var(--cor2);
+    color: var(--cor1);
+    text-align: center;
+    font-weight: 300;
+    border-top: 2px solid var(--cor1);
+    box-shadow: 0px 1px 8px 2px var(--cor2);
+    padding: 10px;
+    margin-top: auto;
+    width: 100%;
+}
+
+footer p {
+    font-size: 0.7em;
+    margin: 0;
+}
+
+footer p a {
+    text-decoration: none;
+    color: var(--cor1);
+}
+
+img.logo {
+    width: 100px;
+}
+
+abbr {
+    text-decoration: none;
+}
+
+div.links > abbr > a {
+    text-decoration: none;
+    font-size: 1.2em;
+    color: var(--cor1);
+    margin: 4px;
+}
+
+div.links > abbr > a:hover {
+    border-bottom: 2px solid var(--cor1);
+}
+
+div.camp0 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--cor2);
+    color: var(--cor1);
+    font-weight: 300;
+    border-bottom: 2px solid var(--cor1);
+    box-shadow: 0px 1px 8px 2px var(--cor3);
+    padding: 4px;
+    width: 100%;
+}
+
+
+
+div.camp1 {
+    width: 240px;
+    background: var(--cor2);
+    color: var(--cor1);
+    text-align: center;
+    border: 2px solid var(--cor1);
+    border-radius: 20px;
+    box-shadow: 0px 1px 8px 2px var(--cor3);
+    cursor: pointer;
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+div.camp1 > h2 {
+    font-weight: 800;
+}
+
+div.camp1 > p {
+    font-weight: 300;
+}
+
+div.camp2 {
+    width: 94vw;
+    background: var(--cor2);
+    color: var(--cor1);
+    text-align: center;
+    border: 2px solid var(--cor1);
+    border-radius: 20px;
+    box-shadow: 0px 1px 8px 2px var(--cor3);
+    padding: 10px;
+    margin: auto;
+    margin-bottom: 20px;
+    }
+
+input#tname {
+    width: 73vw;
+    background: var(--cor2);
+    color: var(--cor1);
+    text-align: center;
+    font-size: 2.3vw;
+    border: 2px solid var(--cor1);
+    border-radius: 20px;
+    padding: 10px;
+    margin-bottom: 60px;
+    margin-left: 14vw;
+}
+
+input#tname:focus {
+    background: var(--cor2);
+    color: var(--cor1);
+    opacity: 1;
+}
+
+input#tname::placeholder {
+    color: var(--cor1);
+    outline: none;
+}
+
+input#btn {
+    width: 27vw;
+    background: var(--cor3);
+    color: var(--cor2);
+    text-align: center;
+    font-weight: 200;
+    border: 2px solid var(--cor1);
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 10px;
+    margin-left: 60vw;
+    margin-top: 20px;
+}
+
+input#btn:hover {
+    background: var(--cor1);
+}
+
+div.camp4 {
+    width: 63vw;
+    background: var(--cor2);
+    color: var(--cor1);
+    text-align: center;
+    border: 2px solid var(--cor1);
+    border-radius: 20px;
+    box-shadow: 0px 1px 8px 2px var(--cor3);
+    cursor: pointer;
+    padding: 10px;
+    margin-left: 30vw;
+    margin-bottom: auto;
+}
+
+div.camp4 > h2 {
+    font-weight: 800;
+}
+
+div.camp4 > p {
+    font-weight: 300;
+}
+
+/*Dispositivos Muito Pequeno (Iphone SE, Samsung J5 Pro)*/
+@media screen and (max-width: 375px) {
+    input#tname::placeholder {
+        font-size: 2.3vw;
+    }
+
+    body {
+        transition: width .9s;
+    }
+
+
+}
+
+/*Dispositivos Médios (Tabletes)*/
+@media screen and (min-width: 768px) {
+    input#tname {
+        width: 50vw;
+        margin-top: 30px;
+        margin-left: 35vw;
+    }
+
+    input#btn {
+        width: 20vw;
+        font-weight: bold;
+        margin-bottom: 10px;
+        margin-left: 65vw;
+    }
+
+    div.camp3 {
+        margin-top: 37.8vh;
+    }
+
+    div.camp3 > p {
+        font-size: 1em;
+    }
+
+    div.camp4 {
+        width: 380px;
+        margin-left: 49%;
+    }
+}
+
+/*Para dispositivos grandes (Laptop e Desktop)*/
+@media screen and (min-width: 992px) {
+    div.camp1 {
+        width: 300px;
+        margin-left: 66vw;
+    }
+
+    div.camp2 {
+        width: 95vw;
+    }
+
+    div.camp1 > h2 {
+        font-size: 2em;
+    }
+
+    div.camp1 > p {
+        font-size: 1.1em;
+    }
+
+    input#tname {
+        width: 57vw;
+        font-size: 1.1em;
+        text-align: left;
+        margin-left: -17vw;
+    }
+
+    input#tname:hover {
+        background: var(--cor1);
+    } 
+    
+    input#btn {
+        font-size: 1.1em;
+        margin-left: -10vw;
+    }
+
+    input#btn:hover {
+        background: var(--cor2);
+        color: var(--cor1);
+    }
+
+    div.camp3 {
+        margin-top: 45.1vh;
+    }
+
+    div.camp3 > p {
+        font-size: 1.1em;
+    }
+
+    div.camp4 {
+        width: 420px;
+        margin-left: 3vw;
+    }
+
+    div.camp4 > h2 {
+        font-size: 2em;
+    }
+
+    div.camp4 > p {
+        font-size: 1.1em;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+   div.camp1 {
+    width: 400px;
+    border: 3px solid var(--cor1);
+    margin-left: 2vw;
+   }
+
+   div.camp1 > h2 {
+    font-size: 2.5em;
+   }
+
+   div.camp1 > p {
+    font-size: 1.2em;
+   }
+
+   div.camp2 {
+    width: 80vw;
+    border: 3px solid var(--cor1);
+   }
+
+   input#tname {
+    width: 510px;
+    text-align: center;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+   }
+
+   input#tname:hover {
+    background: var(--cor2);
+    color: var(--cor1);
+   }
+
+   input#btn {
+    margin: 0px;
+    margin-left: 20px;
+   }
+
+   input#btn:hover {
+    background: var(--cor1);
+    color: var(--cor2);
+   }
+
+   div.camp3 {
+    margin-top: 39.1vh;
+   }
+
+   div.camp3 > p {
+    font-size: 1.2em;
+   }
+
+   div.camp4 {
+    width: 460px;
+    margin-left: 57.9vw;
+    margin-top: auto;
+}
+
+div.camp4 > h2 {
+    font-size: 2.5em;
+}
+
+div.camp4 > p {
+    font-size: 1em;
+}
+}
+
+@media screen and (orientation: landscape) {
+    .camp1, .camp2, .camp4 {
+        margin: 10px;
+    }
+}
+
+/*Ajuste para a página sobre*/
+.sobrew {
+    width: 100px;
+    background: var(--cor1);
+    color: var(--cor2);
+    text-align: center;
+    border: 2px solid var(--cor2);
+    border-radius: 10px;
+    box-shadow: 0px 1px 8px 2px var(--cor3);
+    padding: 10px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+p.abw {
+    color: var(--cor1);
+    text-align: justify;
+    padding: 5px;
+}
+
+/*Abaixo estarão os códigos das animações*/
+
+/*Body animation*/
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+body.load {
+    animation: fadeIn 1.8s ease-in-out forwards;
+}
+/*Body animation end*/
+
+/*div.camp1 animation*/
+div.camp1 {
+    animation: float 2.6s ease-in-out 2.5s 3;
+}
+div.camp4 {
+    animation: float 2.6s ease-in-out 10s infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
