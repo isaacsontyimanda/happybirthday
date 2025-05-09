@@ -423,7 +423,6 @@ div.bg-esp {
     background: #9b7cf8d8;
     color: var(--cor2);
     border-radius: 10px;
-    line-height: 1.5em;
     box-shadow: 0px 1px 8px 2px #00000040;
     padding: 10px;
     margin: auto;
@@ -431,8 +430,4 @@ div.bg-esp {
 
 h2.t1 {
     text-align: center;
-}
-
-p.p1 {
-    
 }
