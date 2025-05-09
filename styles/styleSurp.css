@@ -409,3 +409,30 @@ footer p a {
     text-decoration: none;
     color: var(--cor1);
 }
+
+/*Styles Mensage Especial*/
+div.sms-sp {
+    height: 100vh;
+    background: url('../img/galeria/ft5.jpeg') center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+div.bg-esp {
+    width: 90%;
+    background: #9b7cf8d8;
+    color: var(--cor2);
+    border-radius: 10px;
+    line-height: 1.5em;
+    box-shadow: 0px 1px 8px 2px #00000040;
+    padding: 10px;
+    margin: auto;
+}
+
+h2.t1 {
+    text-align: center;
+}
+
+p.p1 {
+    
+}
