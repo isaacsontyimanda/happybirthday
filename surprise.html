@@ -94,6 +94,14 @@
     </footer>
 
     <script src="js/scripts.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const audioElement = document.querySelector("audio");
+            if (audioElement) {
+                audioElement.volume = 0.2; // Define o volume inicial para 20%
+            }
+        });
+    </script>
 
 </body>
 </html>
