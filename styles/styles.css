@@ -1,9 +1,9 @@
 @charset "UTF-8";
 
 :root {
-    --cor1: #ED1C24;
-    --cor2: #FFFFFF;
-    --cor3: #ed1c237c;
+    --cor2: #ffffff;
+    --cor1: #9a7cf8;
+    --cor3: #784bff75;
 }
 
 * {
@@ -17,7 +17,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background: #F2F2F2;
+    background: #302e35;
 }
 
 .contain {
@@ -30,7 +30,7 @@ footer > div.camp3 {
     text-align: center;
     font-weight: 300;
     border-top: 2px solid var(--cor1);
-    box-shadow: 0px 1px 8px 2px #ED1C24;
+    box-shadow: 0px 1px 8px 2px var(--cor3);
     padding: 10px;
     margin-top: auto;
     width: 100%;
@@ -69,7 +69,7 @@ div.camp0 {
     color: var(--cor1);
     font-weight: 300;
     border-bottom: 2px solid var(--cor1);
-    box-shadow: 0px 1px 8px 2px #ED1C24;
+    box-shadow: 0px 1px 8px 2px var(--cor3);
     padding: 4px;
     width: 100%;
 }
@@ -149,8 +149,8 @@ input#btn {
 }
 
 input#btn:hover {
-    background: #a31217;
-    color: #c2c2c2;
+    background: #c2c2c2;
+    color: #784bffbd;
 }
 
 div.camp4 {
