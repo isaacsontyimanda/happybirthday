@@ -2,14 +2,14 @@ function desb() {
     let nome = document.querySelector('input#tname').value.trim();
 
     // Nome completo esperado
-    const nomeCompleto = 'Nanilda Muhala Mufuati Tyimanda';
+    const nomeCompleto = 'William Mbinzi';
 
     // Verifica se o campo está vazio
     if (nome === '') {
         alert('[ERRO] Campo vazio, por favor! verifique e tente novamente.');
     }
     // Verifica se o nome inserido tem menos de três palavras
-    else if (nome.split(' ').length < 3) {
+    else if (nome.split(' ').length < 2) {
         alert('[ERRO] Por favor! digite seu nome completo, igual ao do BI (bilhete de identidade).');
     }
     // Verifica se o nome não corresponde ao nome completo
