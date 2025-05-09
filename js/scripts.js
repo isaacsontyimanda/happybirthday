@@ -18,7 +18,7 @@ function desb() {
     }
     // Nome completo correto
     else {
-        alert(`Parabéns! 😊🎁 🔹${nome}🔹, você será redirecionada para a sua surpresa 😉`);
+        alert(`Parabéns! 😊🎁 🔹${nome}🔹, você será redirecionado para a sua surpresa 😉`);
         // Redirecionar para a página de surpresa
         redirectToSurprise(nome);
     }
